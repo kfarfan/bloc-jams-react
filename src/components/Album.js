@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Album = () => (
-  <section className="Album">
-  Album will go inside
-  </section>
-);
+class Album extends Component {
+  render() {
+    return (
+      <section className="album">
+        {this.props.match.params.slug}
+      </section>
+
+    );
+  }
+}
 
 
 export default Album;
