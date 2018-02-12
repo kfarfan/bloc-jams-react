@@ -1,6 +1,10 @@
 import React from 'react';
+import girl from '../girl.jpeg';
+import girl2 from '../girl2.jpeg';
+import guy from '../guy.jpg';
 
 const Landing = () => (
+
   <section className="Landing">
   <h1 className="hero-title">Turn the music up!</h1>
 
@@ -16,6 +20,11 @@ const Landing = () => (
       <div className="point">
         <h2 className="point-title">Mobile enabled</h2>
         <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
+      </div>
+      <div>
+  <img className="bg" src={girl} alt={"girl"}/>
+  <img className="bg2" src={girl2} alt={"girl"}/>
+  <img className="bg3" src={guy} alt={"guy"}/>
       </div>
     </section>
   </section>
