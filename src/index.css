@@ -6,7 +6,20 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color:
+  background-image: url('./concert.jpg');
+  background-size: cover;
+
+}
+.Landing{
+  padding-top: 40px;
+}
+.hero-title{
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+}
+.selling-points{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
 }
 .tbody {
   position: absolute;
@@ -27,33 +40,26 @@ body {
   margin-left: 800px;
 }
 
-.bg {
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  top: 150px;
-  bottom: 50px;
-  right: 350px;
-  height: 50vh;
+.container {
 
 }
-.bg2 {
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  top: 150px;
-  bottom: 50px;
-  right: 350px;
-  height: 50vh;
 
+.bg1 {
+  width: calc(25%);
+  border-radius:;
+  float: left;
+
+}
+.bg2{
+  width: calc(25%);
+  border-radius:;
+  float: right;
 }
 .bg3 {
-  background-size: cover;
-  background-position: center center;
-  position: fixed;
-  top: 371px;
-  bottom: 50px;
-  right: 0px;
-  height: 50vh;
-
+  float:left;
+  width: calc(25%);
+}
+.bg4 {
+  width: 25%;
+  float:right;
 }

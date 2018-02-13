@@ -2,15 +2,17 @@ import React from 'react';
 import girl from '../girl.jpeg';
 import girl2 from '../girl2.jpeg';
 import guy from '../guy.jpg';
+import guy2 from '../guy2.jpeg';
+import girl3 from '../girl3.jpg';
 
 const Landing = () => (
 
   <section className="Landing">
-  <h1 className="hero-title">Turn the music up!</h1>
+  <h1 className="hero-title"><em>Turn the music up!</em></h1>
 
     <section className="selling-points">
       <div className="point">
-        <h2 className="point-title">Choose your music</h2>
+        <h2 className="point-title"><strong>Choose your music</strong></h2>
         <p className="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
       </div>
       <div className="point">
@@ -20,11 +22,6 @@ const Landing = () => (
       <div className="point">
         <h2 className="point-title">Mobile enabled</h2>
         <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
-      </div>
-      <div>
-  <img className="bg" src={girl} alt={"girl"}/>
-  <img className="bg2" src={girl2} alt={"girl"}/>
-  <img className="bg3" src={guy} alt={"guy"}/>
       </div>
     </section>
   </section>
