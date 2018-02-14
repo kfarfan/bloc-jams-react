@@ -22,7 +22,8 @@ class Album extends Component {
       currentTime: 0,
       volume: 1,
       duration: album.songs[0].duration,
-      isPlaying: false
+      isPlaying: false,
+      className: undefined
   	};
      this.audioElement = document.createElement('audio');
      this.audioElement.src = album.songs[0].audioSrc;
@@ -66,9 +67,13 @@ class Album extends Component {
     const isSameSong = this.state.currentSong === song;
     if (this.state.isPlaying && isSameSong) {
        this.pause();
+       this.setState({ className: "ion-play"});
+       song.fakein = ''
      } else {
        if (!isSameSong) { this.setSong(song); }
        this.play();
+       this.setState({ className: "ion-pause"});
+       song.fakein = ''
      }
  }
 
@@ -142,7 +147,9 @@ handleNextClick() {
                 <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
                   <td className="song-actions">
                     <button>
-                      <span className="song-number">{index+1}</span>
+                    <span className={this.state.currentSong === song && this.state.isPlaying? 'ion-pause' : 'ion-play'}></span>
+
+                      <span className={this.className}>{song.fakein}</span>
                       <span className="ion-play"></span>
                       <span className="ion-pause"></span>
                     </button>

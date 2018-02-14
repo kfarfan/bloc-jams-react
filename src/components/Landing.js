@@ -1,9 +1,4 @@
 import React from 'react';
-import girl from '../girl.jpeg';
-import girl2 from '../girl2.jpeg';
-import guy from '../guy.jpg';
-import guy2 from '../guy2.jpeg';
-import girl3 from '../girl3.jpg';
 
 const Landing = () => (
 

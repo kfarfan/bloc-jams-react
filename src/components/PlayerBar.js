@@ -30,7 +30,9 @@ return (
       </section>
       <section id="volume-control">
         <div className="icon ion-volume-low">{this.props.currentVolume}</div>
-        <input type="range"
+        <input
+        class="mdl-slider mdl-js-slider"
+        type="range"
          className="seek-bar"
          value={this.props.volume}
          max="100"
