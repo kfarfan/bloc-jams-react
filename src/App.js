@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
 import girl from './girl.jpeg';
+import jams from './jams.png';
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
             <Link to='library'>Library</Link>
             <Link to='album'>Album</Link>
           </nav>
-        <h1>Bloc Jams</h1>
+        <h1></h1>
           </header>
           <main>
             <Route exact path="/" component={Landing} />

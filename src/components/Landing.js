@@ -1,8 +1,9 @@
 import React from 'react';
-
+import jams from '../jams.png';
 const Landing = () => (
 
   <section className="Landing">
+  <img className="jamlogo"src={jams} alt="logo" />
   <h1 className="hero-title"><em>Turn the music up!</em></h1>
 
     <section className="selling-points">
