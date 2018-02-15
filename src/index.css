@@ -21,17 +21,133 @@ body {
   font-family: 'Permanent Marker', cursive;
   font-size: 25px;
 }
-.tbody {
-  position: absolute;
-  left: 45.7%;
-}
-.playerbar {
-  position: relative;
-  margin-top: 135px;
-  margin-left: 20px;
+#song-list{
+  margin: 0 auto;
+  width: 100%;
 }
 
-#volume-control {
+.player-bar {
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
+justify-content: center;
+margin-top: 20px;
+}
+.tbody{
+  margin: 0 auto;
+  display:block;
+}
+nav a {
+  padding: 10px;
+}
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content: center;
+  width: 100%;
+} */
+
+#buttons {
+  width: 100%;
+}
+#time-control {
+margin: 5px;
+}
+#volume-control{
+margin: 5px;
+}
+
+.btn {
+
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #e6005c;
+  color: #00001a;
+  height: 40px;
+  width: 40px;
+
+  transition: background-color .3s;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100%;
+  height: 1px;
+  background-color: #ff5252;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 400ms;
+  outline:none;
+  padding: 0;
+  margin: 0;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  background-color: #ff5252;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 400ms;
+  outline:none;
+  padding: 0;
+  margin: 0;
+}
+
+/* thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  transform:scale(0.75);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #ff5252;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px green;
+  transition: all 400ms;
+  outline:none
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  transform:scale(0.75);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #ff5252;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px green;
+  transition: all 400ms;
+  outline:none
+}
+
+/* thumb hover */
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform:scale(0.85);
+}
+input[type="range"]::-moz-range-thumb:hover{
+  transform:scale(0.85);
+}
+
+/* thumb active */
+input[type="range"]::-webkit-slider-thumb:active {
+  transform:scale(1);
+}
+input[type="range"]::-moz-range-thumb:active{
+  transform:scale(1);
+}
+
+
+/* #volume-control {
   margin-left: 150px;
 }
 
@@ -62,4 +178,4 @@ body {
 .bg4 {
   width: 25%;
   float:right;
-}
+} */

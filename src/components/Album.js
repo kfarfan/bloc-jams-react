@@ -142,7 +142,7 @@ handleNextClick() {
               <col id="song-title-column" />
               <col id="song-duration-column" />
             </colgroup>
-            <tbody className="tbody">
+            <tbody className="tbody" align="center">
               {this.state.album.songs.map( (song, index) =>
                 <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
                   <td className="song-actions">
@@ -160,7 +160,7 @@ handleNextClick() {
               )}
             </tbody>
           </table>
-          <section className="playerbar">
+          <section className="player-bar">
           <PlayerBar
            isPlaying={this.state.isPlaying}
            currentSong={this.state.currentSong}
